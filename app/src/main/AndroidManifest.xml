@@ -13,6 +13,27 @@
         android:theme="@style/Theme.MyApplicationpruebalec"
         tools:targetApi="31">
         <activity
+            android:name=".lecciones.leccion3"
+            android:exported="false" />
+        <activity
+            android:name=".lecciones.leccion2"
+            android:exported="false" />
+        <activity
+            android:name=".lecciones.lecciones01"
+            android:exported="false" />
+        <activity
+            android:name=".leccion02"
+            android:exported="false" />
+        <activity
+            android:name=".leccion3"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion2"
+            android:exported="false" />
+        <activity
+            android:name=".leccion1"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
