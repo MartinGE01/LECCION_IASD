@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lecciones2024">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="
+Ofrenda Especial de Escuela Sabática
+NORMAN COLLEGE, EE.UU.
+¡Dios bendiga la generosa contribución!
+LECCIÓN  1
+Sábado, 6 de enero 2024
+"
+            android:textIsSelectable="true"
+            android:textSize="18sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</FrameLayout>
