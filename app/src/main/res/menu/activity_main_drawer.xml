@@ -7,13 +7,10 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/casa"
-            android:title="@string/menu_home" />
+            android:title="Lecciones" />
 
 
-        <item
-            android:id="@+id/lecciones2024"
-            android:icon="@drawable/ic_libro"
-            android:title="Leccion 3"  android:fragment="com.example.myapplicationpruebalec.lecciones2024" />
+
 
         <item
             android:id="@+id/nav_slideshow"

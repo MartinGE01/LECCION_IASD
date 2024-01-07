@@ -1,9 +1,851 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.leccion.leccion1">
+    android:background="@drawable/fondo2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_ofrenda"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="Ofrenda Especial de Escuela Sabática
+NORMAN COLLEGE, EE.UU.
+¡Dios bendiga la generosa contribución!
+"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/numeroleccion"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="LECCIÓN  1"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="204dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="Sábado, 6 de enero 2024"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_titulo"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="El llamado"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="190dp"
+            android:layout_height="99dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/llamado" />
+
+        <TextView
+            android:id="@+id/Introduccion"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Introduccion"
+            android:textColor="#00BFFF"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Entonces él se sentó y llamó a los doce, y les dijo: Si alguno quiere ser el primero, será el postrero de todos, y el servidor de todos” Marcos 9:35. “Los jefes judíos se consideraban a sí mismos demasiado sabios para necesitar instrucción, demasiado justos para necesitar salvación, demasiado altamente honrados para necesitar el honor que proviene de Cristo. El Salvador se apartó de ellos para confiar a otros los privilegios que ellos habían profanado y la obra que habían descuidado” (Los hechos de los apóstoles, pág. 14)."
+                android:textSize="19sp"
+                android:typeface="monospace" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/subtitulo1"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="La debilidad de la tierra"
+            android:textColor="@color/blue"
+            android:textSize="13sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/domingo"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Domingo"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="italic|bold" />
+
+
+<!--pregunta 1-->
+
+        <TextView
+            android:id="@+id/questionTextView1"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="1
+.¿A quiénes eligió Cristo para continuar la obra en la tierra?
+"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/answerEditText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView1"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText1"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick1" />
+
+        <TextView
+            android:id="@+id/answerTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton1"
+            android:layout_marginTop="16dp" />
+<!--pasaje biblico1-->
+        <TextView
+            android:id="@+id/pasajebiblico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Mateo 10:1-4. “Entonces llamando a sus doce discípulos, les dio auto- ridad sobre los espíritus inmundos,
+
+
+para que los echasen fuera, y para sanar toda enfermedad y toda do- lencia. 2 Los nombres de los doce apóstoles son estos: primero Simón, llamado Pedro, y Andrés su herma- no; Jacobo hijo de Zebedeo, y Juan su hermano; 3 Felipe, Bartolomé, Tomás, Mateo el publicano, Jaco- bo hijo de Alfeo, Lebeo, por sobre- nombre Tadeo, 4 Simón el cananista, y Judas Iscariote, el que también le entregó“."
+            android:textSize="19sp"
+            android:typeface="monospace" />
+<!--nota-->
+        <TextView
+            android:id="@+id/nota01"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Nota"
+            android:textColor="#00BFFF"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/nota1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="“Al ordenar a los doce, se dio el primer paso en la organización de la igle- sia que después de la partida de Cristo habría de continuar su obra en la tierra. Respecto a esta ordenación, el relato dice: ‘Y subió al monte, y llamó a sí a los que él quiso; y vinieron a él. Y estableció doce, para que estuvie- sen con él, y para enviarlos a predicar’ (Mar. 3:13, 14.) …
+
+“Los discípulos estaban por salir como testigos de Cristo, para declarar al mundo lo que habían visto y oído de él” (Los hechos de los apóstoles, pág. 16).
+"
+
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+
+        <!--pregunta 2-->
+
+        <TextView
+            android:id="@+id/lunes"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="lunes"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="italic|bold" />
+        <TextView
+            android:id="@+id/questionTextView2"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="2.¿Por qué eligió a hombres con poca educación formal?"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="italic|bold" />
+
+
+        <EditText
+            android:id="@+id/answerEditText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView2"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText2"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick2" />
+
+        <TextView
+            android:id="@+id/answerTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton2"
+            android:layout_marginTop="16dp" />
+
+        <!--pasaje biblico2-->
+        <TextView
+            android:id="@+id/pasajebiblico2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="1 Corintios 1:25-29. “Porque lo insensato de Dios es más sabio que los hombres, y lo débil de Dios es
+
+más fuerte que los hombres. 26 Pues mirad, hermanos, vuestra vocación, que no sois muchos sabios según la carne, ni muchos poderosos, ni mu- chos nobles; 27 sino que lo necio del mundo escogió Dios, para avergon- zar a los sabios; y lo débil del mundo escogió Dios, para avergonzar a lo fuerte; 28 y lo vil del mundo y lo me- nospreciado escogió Dios, y lo que no es, para deshacer lo que es, 29 a fin de que nadie se jacte en su pre- sencia“.
+"
+
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+
+        <!--nota-->
+        <TextView
+            android:id="@+id/nota02"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Nota"
+            android:textColor="#00BFFF"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/nota2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="“Jesús eligió a pescadores sin letras porque no habían sido educados en las tradiciones y costumbres erróneas de su tiempo. Eran hombres de ca- pacidad innata, humildes y susceptibles de ser enseñados; hombres a quie- nes él podía educar para su obra. En las profesiones comunes de la vida, hay muchos hombres que cumplen sus trabajos diarios, inconscientes de que poseen facultades que, si fuesen puestas en acción, los pondrían a la altura de los hombres más estimados del mundo. Se necesita el toque de una mano hábil para despertar estas facultades dormidas. A hombres tales llamó Jesús para que fuesen sus colaboradores; y les dio las ventajas de estar asociados con él. Nunca tuvieron los grandes del mundo un maestro semejante.
+“Cuando los discípulos terminaron su período de preparación con el Sal- vador, no eran ya ignorantes y sin cultura; habían llegado a ser como él en mente y carácter, y los hombres se dieron cuenta de que habían estado con Jesús” (El Deseado de todas las gentes, pág. 215).
+“Durante tres años y medio, los discípulos estuvieron bajo la instrucción del mayor Maestro que el mundo conoció alguna vez. Mediante el trato y la asociación personales, Cristo los preparó para su servicio. Día tras día caminaban y hablaban con él, oían sus palabras de aliento a los cansados y cargados, y veían la manifestación de su poder en favor de los enfermos y afligidos. Algunas veces les enseñaba, sentado entre ellos en la ladera de la montaña; algunas veces junto a la mar, o andando por el camino, les reve- laba los misterios del reino de Dios” (Los hechos de los apóstoles, pág. 15).
+"
+
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+
+
+        <!--pregunta 3-->
+
+        <TextView
+            android:id="@+id/martes"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Martes"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="italic|bold" />
+        <TextView
+            android:id="@+id/questionTextView3"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="3.¿Cómo mostró Jesús a sus discípulos que el evangelio pronto se enfocaría fuertemente en los gentiles?
+"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="italic|bold" />
+
+
+        <EditText
+            android:id="@+id/answerEditText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView3"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText3"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick3" />
+
+        <TextView
+            android:id="@+id/answerTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton3"
+            android:layout_marginTop="16dp" />
+        <!--pasaje biblico3-->
+        <TextView
+            android:id="@+id/pasajebiblico3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Lucas 7:1-10. “Después que hubo terminado todas sus palabras al pue- blo que le oía, entró en Capernaum. 2 Y el siervo de un centurión, a quien este quería mucho, estaba enfermo y a punto de morir. 3 Cuando el cen- turión oyó hablar de Jesús, le envió unos ancianos de los judíos, rogán- dole que viniese y sanase a su siervo. 4 Y ellos vinieron a Jesús y le rogaron con solicitud, diciéndole: Es digno de que le concedas esto; 5 porque ama a nuestra nación, y nos edificó una sinagoga. 6 Y Jesús fue con ellos. Pero cuando ya no estaban lejos de la casa, el centurión envió a él unos amigos, diciéndole: Señor, no te molestes, pues no soy digno de que entres bajo mi techo; 7 por lo que ni aun me tuve por digno de venir a ti; pero di la palabra, y mi siervo será sano. 8 Porque también yo soy hom- bre puesto bajo autoridad, y tengo
+
+soldados bajo mis órdenes; y digo a este: Ve, y va; y al otro: Ven, y viene; y a mi siervo: Haz esto, y lo hace. 9Al oír esto, Jesús se maravilló de él, y volviéndose, dijo a la gente que le seguía: Os digo que ni aun en Israel he hallado tanta fe. 10 Y al regresar a casa los que habían sido enviados, hallaron sano al siervo que había es- tado enfermo“.
+
+  Marcos 7:24-30. “Levantándose de allí, se fue a la región de Tiro y de Si- dón; y entrando en una casa, no quiso que nadie lo supiese; pero no pudo esconderse. 25 Porque una mujer, cuya hija tenía un espíritu inmundo, luego que oyó de él, vino y se postró a sus pies. 26 La mujer era griega, y sirofeni- cia de nación; y le rogaba que echase fuera de su hija al demonio. 27 Pero Jesús le dijo: Deja primero que se sa- cien los hijos, porque no está bien to- mar el pan de los hijos y echarlo a los perrillos. 28Respondió ella y le dijo: Sí, Señor; pero aun los perrillos, debajo de la mesa, comen de las migajas de los hijos. 29 Entonces le dijo: Por esta palabra, ve; el demonio ha salido de tu hija. 30 Y cuando llegó ella a su casa, halló que el demonio había salido, y a la hija acostada en la cama“.
+"
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+        <!--nota-->
+        <TextView
+            android:id="@+id/nota03"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Nota"
+            android:textColor="#00BFFF"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/nota3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="“El Salvador anhelaba exponer a sus discípulos la verdad concerniente al derribamiento de la ‘pared intermedia de separación’ entre Israel y las otras naciones, la verdad de que ‘los Gentiles sean juntamente herederos’ con los judíos, y ‘consortes de su promesa en Cristo por el evangelio’ (Efe. 2:14; 3:6.) Esta verdad fue revelada en parte cuando recompensó la fe del centurión de Capernaúm, y también cuando predicó el Evangelio a los habitantes de Sicar. Fue revelada todavía más claramente en ocasión de su visita a Fenicia, cuando sanó a la hija de la mujer cananea. Estos incidentes ayudaron a sus
+
+discípulos a comprender que entre aquellos a quienes muchos considera- ban indignos de la salvación, había almas ansiosas de la luz de la verdad. “Así Cristo trataba de enseñar a sus discípulos la verdad de que en el reino de Dios no hay fronteras nacionales, ni castas, ni aristocracia; que ellos de- bían ir a todas las naciones, llevándoles el mensaje del amor del Salvador” (Los hechos de los apóstoles, págs. 16-17).
+"
+
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+        <!--pregunta 4-->
+        <!-- ... (código anterior) -->
+        <TextView
+            android:id="@+id/Miercoles"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Miercoles"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="italic|bold" />
+        <TextView
+            android:id="@+id/questionTextView4"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="4.¿Qué plan trazó Cristo para lograr la unidad entre los doce hombres con notables diferencias de carácter?
+"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="italic|bold" />
+
+
+        <EditText
+            android:id="@+id/answerEditText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView4"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText4"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick4" />
+
+        <TextView
+            android:id="@+id/answerTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton4"
+            android:layout_marginTop="16dp" />
+
+
+
+        <!--pasaje biblico4-->
+        <TextView
+            android:id="@+id/pasajebiblico4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Juan 17:21, 23. “Para que todos sean uno. Padre, así como tú estás en mí y yo en ti, permite que ellos también estén en nosotros, para que el mundo crea que tú me has envia- do. 23 Yo en ellos, y tú en mí, para que sean perfectos en unidad, para que el mundo conozca que tú me enviaste, y que los has amado a ellos como también a mí me has amado“."
+
+            android:textSize="19sp"
+            android:typeface="monospace" />
+        <!--nota-->
+        <TextView
+            android:id="@+id/nota04"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Nota"
+            android:textColor="#00BFFF"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/nota4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="“En estos primeros discípulos había notable diversidad. Habían de ser los maestros del mundo, y representaban muy variados tipos de carácter. A fin de realizar con éxito la obra a la cual habían sido llamados, estos hombres, de diferentes características naturales y hábitos de vida, necesitaban unir- se en sentimiento, pensamiento y acción. Cristo se propuso conseguir esta unidad. Con ese fin trató de unirlos con él mismo. La mayor preocupación de su trabajo en favor de ellos se expresa en la oración que dirigió a su Padre” (Los hechos de los apóstoles, pág. 17).
+            "
+
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+
+
+        <!--pregunta 5-->
+        <!-- ... Repite el patrón para las preguntas 5 a 7 -->
+        <!-- ... (código anterior) -->
+        <TextView
+            android:id="@+id/Jueves"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Jueves"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="italic|bold" />
+        <TextView
+            android:id="@+id/questionTextView5"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="5.Con qué palabras alentadoras dijo Cristo a sus discípulos que regresaría?
+
+"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="italic|bold" />
+
+
+        <EditText
+            android:id="@+id/answerEditText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView5"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText5"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick5" />
+
+        <TextView
+            android:id="@+id/answerTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton5"
+            android:layout_marginTop="16dp" />
+
+        <!--pasaje biblico5-->
+        <TextView
+            android:id="@+id/pasajebiblico5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Juan 14:1-3. “No se turbe vuestro corazón; creéis en Dios, creed tam- bién en mí. 2 En la casa de mi Padre muchas moradas hay; si así no fuera, yo os lo hubiera dicho; voy, pues, a preparar lugar para vosotros. 3 Y si me fuere y os preparare lugar, ven- dré otra vez, y os tomaré a mí mis- mo, para que donde yo estoy, voso- tros también estéis“."
+
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+        <!--nota-->
+        <TextView
+            android:id="@+id/nota05"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Nota"
+            android:textColor="#00BFFF"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+
+        <TextView
+            android:id="@+id/nota5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="““Les habló también palabras de esperanza y valor. ‘No se turbe vuestro co- razón -dijo: creéis en Dios, creed también en mí. En la casa de mi Padre mu- chas moradas hay: de otra manera os lo hubiera dicho: voy, pues, a preparar lugar para vosotros. Y si me fuere, y os aparejare lugar, vendré otra vez, y os
+
+tomaré a mí mismo: para que donde yo estoy, vosotros también estéis. Y sabéis a dónde yo voy; y sabéis el camino’ (Juan 14:1-4.) Por amor a vosotros he venido al mundo, por vosotros he trabajado. Cuando me vaya, todavía trabajaré fervientemente por vosotros. Vine al mundo para revelarme a vo- sotros, para que pudierais creer. Voy a mi Padre y a vuestro Padre para coo- perar con él en favor vuestro” (Los hechos de los apóstoles, pág. 18)
+
+"
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+
+        <!-- pregunta 6 -->
+        <!-- ... (código anterior) -->
+        <TextView
+            android:id="@+id/Viernes"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Viernes"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="italic|bold" />
+        <TextView
+            android:id="@+id/questionTextView6"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="6.¿Qué otra rica promesa dio a sus discípulos?
+"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="italic|bold" />
+
+
+        <EditText
+            android:id="@+id/answerEditText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView6"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText6"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick6" />
+
+        <TextView
+            android:id="@+id/answerTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton6"
+            android:layout_marginTop="16dp" />
+
+
+        <!--pasaje biblico6-->
+        <TextView
+            android:id="@+id/pasajebiblico6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Juan 15:26-27; 14:16-17. “Pero cuan- do venga el Consolador, a quien yo os enviaré del Padre, el Espíritu de
+
+verdad, el cual procede del Padre, él dará testimonio acerca de mí. 27 Y vosotros daréis testimonio también, porque habéis estado conmigo des- de el principio. 14:16Y yo rogaré al Pa- dre, y os dará otro Consolador, para que esté con vosotros para siempre:
+17 el Espíritu de verdad, al cual el mundo no puede recibir, porque no le ve, ni le conoce; pero vosotros le conocéis, porque mora con vosotros, y estará en vosotros”.
+"
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+        <!--nota-->
+        <TextView
+            android:id="@+id/nota06"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Nota"
+            android:textColor="#00BFFF"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+
+        <TextView
+            android:id="@+id/nota6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="“Con esto Cristo no quiso decir que los discípulos habrían de realizar obras más elevadas que las que él había hecho, sino que su trabajo tendría ma- yor amplitud. No se refirió meramente a la realización de milagros, sino a todo lo que sucedería bajo la acción del Espíritu Santo.
+“Cuando viniere el Consolador dijo él, ‘el cual yo os enviaré del Padre, el Espíritu de verdad, el cual procede del Padre, él dará testimonio de mí. Y vosotros daréis testimonio, porque estáis conmigo desde el principio’ (Juan 15:26, 27.)
+“Estas palabras se cumplieron maravillosamente. Después del descenso del Espíritu Santo, los discípulos estaban tan llenos de amor hacia Cristo y hacia aquellos por quienes él murió, que los corazones se conmovían por las palabras que hablaban y las oraciones que ofrecían. Hablaban con el poder del Espíritu; y bajo la influencia de ese poder miles se convirtieron” (Los hechos de los apóstoles, págs. 18-19).
+
+"
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+
+        <!-- Pregunta 7 -->
+
+        <TextView
+            android:id="@+id/Sabado"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Sabado"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/questionTextView7"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="7.Cuál es el significado de la ferviente petición de Jesús a su Padre: “Más no ruego solamente por éstos, sino también por los que creen en mí por la palabra de ellos”?
+"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="italic|bold" />
+
+
+        <EditText
+            android:id="@+id/answerEditText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView7"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText7"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick7" />
+
+        <TextView
+            android:id="@+id/answerTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton7"
+            android:layout_marginTop="16dp" />
+
+
+        <!--pasaje biblico7-->
+        <TextView
+            android:id="@+id/pasajebiblico7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Juan 17:20-21. “Mas no ruego so- lamente por éstos, sino también por los que han de creer en mí por la pa- labra de ellos, 21 para que todos sean uno; como tú, oh Padre, en mí, y yo en ti, que también ellos sean uno en nosotros; para que el mundo crea que tú me enviaste”."
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+        <!--nota-->
+        <TextView
+            android:id="@+id/nota07"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Nota"
+            android:textColor="#00BFFF"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/nota7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="“Cuando el pueblo de Dios crea sin reservas en la oración de Cristo, y en la vida diaria ponga sus instrucciones en práctica, habrá unidad de acción en nuestras filas. Un hermano se sentirá unido al otro por las cadenas del amor de Cristo. Sólo el Espíritu de Dios puede realizar esta unidad. El que se santificó a sí mismo puede santificar a sus discípulos. Unidos con él, estaremos unidos unos a otros en la fe más santa. Cuando nos esforcemos para obtener esta unidad como Dios desea que luchemos, nos será con- cedida” (Joyas de los testimonios, tomo 3, pág. 247).
+
+            "
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+
+
+        <!--estudio adicional-->
+        <TextView
+            android:id="@+id/estudioadicional"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Estudio adicional"
+            android:textColor="#FF5722"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/estudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="“Como representantes de Cristo, los apóstoles iban a hacer una impre- sión definida en el mundo. El hecho de que eran hombres humildes no disminuiría su influencia, sino que la acrecentaría; porque las mentes de sus oyentes se dirigirían de ellos al Salvador, que, aunque invisi- ble, seguía obrando todavía con ellos. La maravillosa enseñanza de los apóstoles, sus palabras de valor y confianza, darían a todos la seguri- dad de que no obraban ellos por su propio poder, sino por el poder de Cristo. Al humillarse a sí mismos, declararían que Aquel a quien los judíos habían crucificado era el Príncipe de la vida, el Hijo del Dios vivo, y que en su nombre hacían las obras que él había hecho” (Los hechos de los apóstoles, pág. 19).
+            "
+            android:textSize="19sp"
+            android:typeface="monospace" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

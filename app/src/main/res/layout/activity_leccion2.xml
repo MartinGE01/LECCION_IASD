@@ -1,9 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.leccion.leccion2">
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/questionTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál es tu respuesta 1?"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/answerEditText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView1"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText1"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick1" />
+
+        <TextView
+            android:id="@+id/answerTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton1"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/questionTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerTextView1"
+            android:layout_marginTop="16dp"
+            android:text="¿Cuál es tu respuesta 2?"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/answerEditText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView2"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText2"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick2" />
+
+        <TextView
+            android:id="@+id/answerTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton2"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/questionTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerTextView2"
+            android:layout_marginTop="16dp"
+            android:text="¿Cuál es tu respuesta 3?"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/answerEditText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView3"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText3"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick3" />
+
+        <TextView
+            android:id="@+id/answerTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton3"
+            android:layout_marginTop="16dp" />
+
+
+        <!-- ... (código anterior) -->
+
+        <TextView
+            android:id="@+id/questionTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerTextView3"
+            android:layout_marginTop="16dp"
+            android:text="¿Cuál es tu respuesta 4?"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/answerEditText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView4"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText4"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick4" />
+
+        <TextView
+            android:id="@+id/answerTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton4"
+            android:layout_marginTop="16dp" />
+
+        <!-- ... Repite el patrón para las preguntas 5 a 7 -->
+        <!-- ... (código anterior) -->
+
+        <TextView
+            android:id="@+id/questionTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerTextView4"
+            android:layout_marginTop="16dp"
+            android:text="¿Cuál es tu respuesta 5?"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/answerEditText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView5"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText5"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick5" />
+
+        <TextView
+            android:id="@+id/answerTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton5"
+            android:layout_marginTop="16dp" />
+
+        <!-- Repite el patrón para las preguntas 6 y 7 -->
+        <!-- ... (código anterior) -->
+
+        <TextView
+            android:id="@+id/questionTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerTextView5"
+            android:layout_marginTop="16dp"
+            android:text="¿Cuál es tu respuesta 6?"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/answerEditText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView6"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText6"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick6" />
+
+        <TextView
+            android:id="@+id/answerTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton6"
+            android:layout_marginTop="16dp" />
+
+        <!-- Pregunta 7 -->
+
+        <TextView
+            android:id="@+id/questionTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerTextView6"
+            android:layout_marginTop="16dp"
+            android:text="¿Cuál es tu respuesta 7?"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/answerEditText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView7"
+            android:layout_marginTop="8dp"
+            android:hint="Escribe tu respuesta aquí" />
+
+        <Button
+            android:id="@+id/saveButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerEditText7"
+            android:layout_marginTop="16dp"
+            android:text="Guardar"
+            android:onClick="onSaveButtonClick7" />
+
+        <TextView
+            android:id="@+id/answerTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton7"
+            android:layout_marginTop="16dp" />
+
+
+    </RelativeLayout>
+</ScrollView>

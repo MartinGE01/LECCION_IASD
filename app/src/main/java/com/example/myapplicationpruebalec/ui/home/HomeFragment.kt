@@ -36,6 +36,7 @@ import com.example.myapplicationpruebalec.ui.leccion.leccion24
 import com.example.myapplicationpruebalec.ui.leccion.leccion25
 import com.example.myapplicationpruebalec.ui.leccion.leccion26
 
+
 // Importa las otras clases de lecciones aquí
 
 class HomeFragment : Fragment() {
