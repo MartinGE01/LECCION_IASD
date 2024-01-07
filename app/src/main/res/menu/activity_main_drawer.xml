@@ -8,19 +8,16 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/casa"
             android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_libro"
-            android:title="Leccion1" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_libro"
-            android:title="Leccion 2" />
+
+
         <item
             android:id="@+id/lecciones2024"
             android:icon="@drawable/ic_libro"
             android:title="Leccion 3"  android:fragment="com.example.myapplicationpruebalec.lecciones2024" />
 
-
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_libro"
+            android:title="Matutinas" />
     </group>
 </menu>

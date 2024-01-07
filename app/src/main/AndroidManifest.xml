@@ -13,25 +13,88 @@
         android:theme="@style/Theme.MyApplicationpruebalec"
         tools:targetApi="31">
         <activity
-            android:name=".lecciones.leccion3"
+            android:name=".ui.leccion.leccion26"
             android:exported="false" />
         <activity
-            android:name=".lecciones.leccion2"
+            android:name=".ui.leccion.leccion25"
             android:exported="false" />
         <activity
-            android:name=".lecciones.lecciones01"
+            android:name=".ui.leccion.leccion24"
             android:exported="false" />
         <activity
-            android:name=".leccion02"
+            android:name=".ui.leccion.leccion23"
             android:exported="false" />
         <activity
-            android:name=".leccion3"
+            android:name=".ui.leccion.leccion22"
             android:exported="false" />
         <activity
-            android:name=".ui.leccion2"
+            android:name=".ui.leccion.leccion21"
             android:exported="false" />
         <activity
-            android:name=".leccion1"
+            android:name=".ui.leccion.leccion20"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion19"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion18"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_leccion18"
+            android:theme="@style/Theme.MyApplicationpruebalec.Fullscreen" />
+        <activity
+            android:name=".ui.leccion.leccion"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion17"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion16"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion15"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion14"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion13"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion12"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion11"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion10"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion9"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion8"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion7"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion6"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion5"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion4"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion3"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion2"
+            android:exported="false" />
+        <activity
+            android:name=".ui.leccion.leccion1"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

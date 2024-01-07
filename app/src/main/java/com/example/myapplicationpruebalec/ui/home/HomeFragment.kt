@@ -9,9 +9,33 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplicationpruebalec.databinding.FragmentHomeBinding
-import com.example.myapplicationpruebalec.lecciones.lecciones01
-import com.example.myapplicationpruebalec.lecciones.leccion2
-import com.example.myapplicationpruebalec.lecciones.leccion3
+import com.example.myapplicationpruebalec.ui.leccion.leccion1
+import com.example.myapplicationpruebalec.ui.leccion.leccion2
+import com.example.myapplicationpruebalec.ui.leccion.leccion3
+import com.example.myapplicationpruebalec.ui.leccion.leccion4
+import com.example.myapplicationpruebalec.ui.leccion.leccion5
+import com.example.myapplicationpruebalec.ui.leccion.leccion6
+import com.example.myapplicationpruebalec.ui.leccion.leccion7
+import com.example.myapplicationpruebalec.ui.leccion.leccion8
+import com.example.myapplicationpruebalec.ui.leccion.leccion9
+import com.example.myapplicationpruebalec.ui.leccion.leccion10
+import com.example.myapplicationpruebalec.ui.leccion.leccion11
+import com.example.myapplicationpruebalec.ui.leccion.leccion12
+import com.example.myapplicationpruebalec.ui.leccion.leccion13
+import com.example.myapplicationpruebalec.ui.leccion.leccion14
+import com.example.myapplicationpruebalec.ui.leccion.leccion15
+import com.example.myapplicationpruebalec.ui.leccion.leccion16
+import com.example.myapplicationpruebalec.ui.leccion.leccion17
+import com.example.myapplicationpruebalec.ui.leccion.leccion18
+import com.example.myapplicationpruebalec.ui.leccion.leccion19
+import com.example.myapplicationpruebalec.ui.leccion.leccion20
+import com.example.myapplicationpruebalec.ui.leccion.leccion21
+import com.example.myapplicationpruebalec.ui.leccion.leccion22
+import com.example.myapplicationpruebalec.ui.leccion.leccion23
+import com.example.myapplicationpruebalec.ui.leccion.leccion24
+import com.example.myapplicationpruebalec.ui.leccion.leccion25
+import com.example.myapplicationpruebalec.ui.leccion.leccion26
+
 // Importa las otras clases de lecciones aquí
 
 class HomeFragment : Fragment() {
@@ -58,7 +82,7 @@ class HomeFragment : Fragment() {
         val button26: Button = binding.button26
 
         button1.setOnClickListener {
-            val intent = Intent(requireActivity(), lecciones01::class.java)
+            val intent = Intent(requireActivity(), leccion1::class.java)
             startActivity(intent)
         }
 
